@@ -1,0 +1,18 @@
+<script>
+    //声明函数,js是函数式 动态类型编程语言
+    // function sum(a,b) {
+    //     return a+b
+    // }
+    //调用函数
+    //alert(sum(1,5))
+
+    function f1() {
+        alert("1------")
+    }
+    function f2() {
+        return f1
+    }
+    //var v1 = f1
+    var v2 = f2
+    v2()()
+</script>
