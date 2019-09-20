@@ -5,7 +5,7 @@ import scala.collection.mutable
 object map {
     def main(args: Array[String]): Unit = {
         
-/*       //创建映射集合，构建Map集合时，集合中的元素其实是Tuple类型
+       //创建映射集合，构建Map集合时，集合中的元素其实是Tuple类型
         val map1 = Map("wang"->10 ,"zi"-> 20)
         println(map1)
         
@@ -15,10 +15,11 @@ object map {
         
         //空的映射
         val map3 = new mutable.HashMap[String,Int]()
-        println(map3)*/
+        println(map3)
         
         //使用元组的方式构建Map集合
         val map4 = mutable.Map(("A",1),("B",2),("C",3))
+        println(map4)
         println(map4("B"))
         if (map4.contains("D")){
             println(map4("D"))
@@ -38,10 +39,10 @@ object map {
         
         //循环遍历map
         for ((k,v) <- map4){
-            println(k+"="+v)
+            print(k+"="+v+"\t")
         }
         for (k <- map4.keys){
-            println(k)
+            print(k)
         }
     }
 }

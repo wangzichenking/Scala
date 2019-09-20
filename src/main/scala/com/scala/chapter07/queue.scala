@@ -11,8 +11,9 @@ object queue {
         q += 1
         //追加集合元素
         q ++= List(2,3,4)
+        q ++= Array(10,11,12)
         //删除元素
-        q.dequeue()
+        for (i <- 1 to 4) q.dequeue()
         //增加元素
         q.enqueue(9,8,7)
         println(q)
