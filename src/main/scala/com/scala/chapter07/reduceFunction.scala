@@ -7,6 +7,6 @@ object reduceFunction {
         def minus(num1:Int,num2:Int):Int={
             num1-num2
         }
-        println(list.reduceLeft(minus))
+        println(list.reduceRight(minus))
     }
 }
